@@ -24,13 +24,13 @@ The data preprocessing step involves cleaning and transforming the text data to 
 - HTML tag removal: HTML tags and entities were removed from the preprocessed text.
 
 ## Generating Sentence Embeddings
-Sentence embeddings were generated using the sentence-transformers. The preprocessed text data was encoded using the "nli-distilroberta-base-v2" transformer . The resulting embeddings represent the semantic meaning of the clothing descriptions.
+Sentence embeddings were generated using pretrained Sentence-BERT Transformers. The resulting embeddings represent the semantic meaning of the clothing descriptions.
 
 ## Similarity Search
 To find similar clothing items, the cosine similarity measure was used to compare the embeddings of the query text with the embeddings of the clothing products. The higher the cosine similarity score, the more similar the items are in terms of their descriptions. The top matching products were retrieved based on the similarity scores.
 
 ## Deployment
-The project includes a Flask server that provides an API for similarity search. The server was deployed using Docker on Google Cloud. The API endpoint accepts a query string and returns the top 5 most similar products as a JSON response.
+The project includes a Flask server that provides an API for similarity search. The server was deployed using Docker on Google Cloud. The API endpoint accepts a query string as well as K and returns the top K most similar products as a JSON response.
 
 ## Project Structure
 The project repository has the following structure:
@@ -100,6 +100,8 @@ Note: Please ensure that Docker is running on your computer before executing the
 - [Sentence Transformers Documentation](https://www.sbert.net/)
 - [Flask Documentation](https://flask.palletsprojects.com/)
 - [Docker Documentation](https://docs.docker.com/)
+- Reimers, Nils and Gurevych, Iryna. "Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks." In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing, November 2019. Association for Computational Linguistics. Available at: [arXiv:1908.10084](http://arxiv.org/abs/1908.10084).
+
 
 
 <h3 align="left">Languages and Tools:</h3>
