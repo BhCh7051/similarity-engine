@@ -24,7 +24,7 @@ The data preprocessing step involves cleaning and transforming the text data to 
 - HTML tag removal: HTML tags and entities were removed from the preprocessed text.
 
 ## Generating Sentence Embeddings
-Sentence embeddings were generated using the sentence-transformers library. The preprocessed text data was encoded using the "all-MiniLM-L6-v2" model from the SentenceTransformer class. The resulting embeddings represent the semantic meaning of the clothing descriptions.
+Sentence embeddings were generated using the sentence-transformers. The preprocessed text data was encoded using the "nli-distilroberta-base-v2" transformer . The resulting embeddings represent the semantic meaning of the clothing descriptions.
 
 ## Similarity Search
 To find similar clothing items, the cosine similarity measure was used to compare the embeddings of the query text with the embeddings of the clothing products. The higher the cosine similarity score, the more similar the items are in terms of their descriptions. The top matching products were retrieved based on the similarity scores.
