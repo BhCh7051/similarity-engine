@@ -12,7 +12,7 @@
 The Clothing Similarity Search project aims to provide a search functionality that allows users to find similar clothing items based on their descriptions. The project includes web scraping of product data from various websites, preprocessing of the data, generating sentence embeddings using the sentence-transformers library, and deploying a Flask server to provide an API for similarity search.
 
 ## Data Collection
-To collect the clothing data, web scraping techniques were employed to extract product information from websites such as Ajio, Myntra, and Nike. The scraped data includes the product URL, title, and description. The data was stored in a CSV file with columns for URL, title, and description.
+To collect the clothing data, web scraping techniques were employed to extract product information from websites such as Ajio, Myntra, and Nike. The scraped data includes the product URL, title, and description. The data was stored in a CSV file with columns for URL, title, and description and contains details of **4,00,000** products.
 
 ## Data Preprocessing
 The data preprocessing step involves cleaning and transforming the text data to make it suitable for similarity search. The following preprocessing steps were performed:
