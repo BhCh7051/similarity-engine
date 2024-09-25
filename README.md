@@ -1,6 +1,6 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=bhch7051&label=Profile%20views&color=0e75b6&style=flat" alt="bhch7051" /> </p>
 
-# Clothing Similarity Search
+# Clothing Similarity Search (Vector Search Engine)
 
 
 <p align="center">
